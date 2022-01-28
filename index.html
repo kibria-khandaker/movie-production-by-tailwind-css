@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- UTF-8 is just one of the encoding methods that were invented to implement this requirement. it is a character encoding capable of encoding all possible characters (called code points) in Unicode. The encoding is variable-length and uses 8-bit code units.  -->
+    <meta charset="UTF-8" />
+    <!-- Microsoft internet explorer browser support  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google (Bebas-Neue & Montserrat) font cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Website title  -->
+    <title>Tailwind Template</title>
+    <!-- tailwind script lodging link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind customizing script js code  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            //   custom css start
+            colors: {
+              myYellow1: "#fecc02",
+              myOffBlack1: "#131313",
+              myLightBlack1: "#4e4e4e",
+            },
+            fontFamily: {
+              bebas: ["Bebas Neue", "cursive"],
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+            //   custom css end
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-bebas">
+    <header class="w-full bg-white h-20 flex justify-center absolute">
+      <nav class="w-4/5 h-full flex justify-between items-center">
+        <h1 class="text-3xl">Movie Production</h1>
+        <ul class="flex gap-x-5 text-xl hidden md:flex">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#"> Our Movie </a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="h-screen bg-[url('img/banner.jpg')] bg-cover">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+      </section>
+    </main>
+  </body>
+</html>
