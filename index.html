@@ -54,9 +54,9 @@
       <section
         class="h-screen bg-[url('img/banner.jpg')] bg-cover flex items-center"
       >
-        <div class="w-2/4 mx-10 text-white">
+        <div class="w-full md:w-2/4 mx-10 text-white">
           <p class="text-xl">Movie production studio</p>
-          <h2 class="text-7xl">
+          <h2 class="md:text-7xl text-5xl">
             Films MAde to <br />
             <span class="text-myYellow1">Perfection</span>
           </h2>
@@ -89,10 +89,10 @@
               </h1>
             </div>
             <!-- right text box  -->
-            <div class="w-full lg:w-1/2">
+            <div class="w-full lg:w-1/2 pt-12 lg:pt-0">
               <p class="text-xl">ABOUT US</p>
 
-              <h2 class="text-7xl">
+              <h2 class="md:text-7xl text-5xl">
                 FIlming Experience <br />
                 Just Got better
               </h2>
@@ -110,10 +110,10 @@
             </div>
           </div>
           <!-- 3 text box  -->
-          <div class="mt-12 grid grid-cols-3 gap-x-20">
+          <div class="mt-12 lg:grid grid-cols-3 gap-x-20">
             <!-- 1st text box  -->
-            <div class="border-t-4 border-slate-900">
-              <h2 class="text-5xl mt-5">OUR VISION</h2>
+            <div class="border-t-4 border-slate-900 lg:mb-0 mb-10">
+              <h2 class="md:text-5xl text-3xl mt-5">OUR VISION</h2>
               <p class="font-montserrat mt-5">
                 The sun was brilliant, the pinks and oranges – combined with the
                 multiple shades of blue sky as it lightened – creating a vision
@@ -121,8 +121,8 @@
               </p>
             </div>
             <!-- 1st text box  -->
-            <div class="border-t-4 border-slate-900">
-              <h2 class="text-5xl mt-5">OUR Mission</h2>
+            <div class="border-t-4 border-slate-900 lg:mb-0 mb-10">
+              <h2 class="md:text-5xl text-3xl mt-5">OUR Mission</h2>
               <p class="font-montserrat mt-5">
                 Suppose Alfred Nota and his pal Homer's break-in at Collingswood
                 Avenue was just a cover-up and their true mission was to plant a
@@ -130,8 +130,8 @@
               </p>
             </div>
             <!-- 1st text box  -->
-            <div class="border-t-4 border-slate-900">
-              <h2 class="text-5xl mt-5">OUR Motto</h2>
+            <div class="border-t-4 border-slate-900 lg:mb-0 mb-10">
+              <h2 class="md:text-5xl text-3xl mt-5">OUR Motto</h2>
               <p class="font-montserrat mt-5">
                 It was sacked by the Hungarians in 902, but otherwise its
                 history is little known, and it is uncertain when it acquired
@@ -142,50 +142,102 @@
         </div>
       </section>
       <!-- OUR MOVIES collection -->
-      <section class="bg-zinc-600 h-full w-full text-white p-10">
+      <section class="bg-zinc-600 h-full w-full text-white p-10 pb-16">
         <div>
           <p class="text-xl">OUR MOVIES</p>
-          <div class="flex items-center justify-between">
-            <h2 class="text-7xl">MOvies collection</h2>
+          <div class="md:flex items-center justify-between">
+            <h2 class="md:text-7xl text-5xl">MOvies collection</h2>
             <button
-              class="border-2 px-5 pt-3 pb-2 text-xl hover:text-black hover:bg-myYellow1 hover:border-myYellow1 transition-all"
+              class="border-2 px-5 pt-3 pb-2 text-xl hover:text-black hover:bg-myYellow1 hover:border-myYellow1 transition-all md:mt-0 mt-5"
             >
               See more movies
             </button>
           </div>
         </div>
         <!-- MOVIES Grid items  -->
-        <div class="grid grid-cols-4 gap-x-10 gap-y-8 mt-10">
-          <div class="border-2 border-white w-full h-[400px] p-5">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-x-10 gap-y-8 mt-10">
+          <a
+            href="https://www.imdb.com/title/tt6723592/?ref_=nv_sr_srsg_0"
+            target="_blank"
+          >
             <div
-              class="h-full w-full bg-[url('img/tenet.jpg')] bg-cover bg-center"
+              class="border-2 border-white w-full lg:h-[350px] md:h-[500px] h-[280px] p-5"
             >
-              fdssdf
+              <div
+                class="h-full w-full bg-[url('img/tenet.jpg')] bg-cover bg-center flex justify-center items-center group relative"
+              >
+                <div
+                  class="h-full w-full absolute z-10 top-0 bottom-0 right-0 left-0 bg-black opacity-75 hidden group-hover:block"
+                ></div>
+                <h3 class="text-2xl hidden group-hover:block z-20">Tenet</h3>
+              </div>
             </div>
-          </div>
-          <div class="border-2 border-white w-full h-[400px] p-5">
+          </a>
+          <a
+            href="https://www.imdb.com/title/tt6723592/?ref_=nv_sr_srsg_0"
+            target="_blank"
+          >
             <div
-              class="h-full w-full bg-[url('img/inception.jpg')] bg-cover bg-center"
+              class="border-2 border-white w-full lg:h-[350px] md:h-[500px] h-[280px] p-5"
             >
-              fdssdf
+              <div
+                class="h-full w-full bg-[url('img/inception.jpg')] bg-cover bg-center flex justify-center items-center group relative"
+              >
+                <div
+                  class="h-full w-full absolute z-10 top-0 bottom-0 right-0 left-0 bg-black opacity-75 hidden group-hover:block"
+                ></div>
+                <h3 class="text-2xl hidden group-hover:block z-20">
+                  Inception
+                </h3>
+              </div>
             </div>
-          </div>
-          <div class="border-2 border-white w-full h-[400px] p-5">
+          </a>
+          <a
+            href="https://www.imdb.com/title/tt6723592/?ref_=nv_sr_srsg_0"
+            target="_blank"
+          >
             <div
-              class="h-full w-full bg-[url('img/interstellar.jpg')] bg-cover bg-center"
+              class="border-2 border-white w-full lg:h-[350px] md:h-[500px] h-[280px] p-5"
             >
-              fdssdf
+              <div
+                class="h-full w-full bg-[url('img/interstellar.jpg')] bg-cover bg-center flex justify-center items-center group relative"
+              >
+                <div
+                  class="h-full w-full absolute z-10 top-0 bottom-0 right-0 left-0 bg-black opacity-75 hidden group-hover:block"
+                ></div>
+                <h3 class="text-2xl hidden group-hover:block z-20">
+                  Fractured
+                </h3>
+              </div>
             </div>
-          </div>
-          <div class="border-2 border-white w-full h-[400px] p-5">
+          </a>
+          <a
+            href="https://www.imdb.com/title/tt6723592/?ref_=nv_sr_srsg_0"
+            target="_blank"
+          >
             <div
-              class="h-full w-full bg-[url('img/fractured.jpg')] bg-cover bg-center"
+              class="border-2 border-white w-full lg:h-[350px] md:h-[500px] h-[280px] p-5"
             >
-              fdssdf
+              <div
+                class="h-full w-full bg-[url('img/fractured.jpg')] bg-cover bg-center flex justify-center items-center group relative"
+              >
+                <div
+                  class="h-full w-full absolute z-10 top-0 bottom-0 right-0 left-0 bg-black opacity-75 hidden group-hover:block"
+                ></div>
+                <h3 class="text-2xl hidden group-hover:block z-20">
+                  Interstellar
+                </h3>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </section>
     </main>
+    <footer
+      class="bg-zinc-600 text-white flex justify-between items-center p-10 border-t border-slate-700"
+    >
+      <p>© 2021 | All kinds of Movie Production</p>
+      <h1 class="text-3xl">Movie Production</h1>
+    </footer>
   </body>
 </html>
